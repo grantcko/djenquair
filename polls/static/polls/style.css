@@ -1,0 +1,33 @@
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background: white url("images/background.jpg") no-repeat;
+  text-align: center !important;
+  color: #fff !important;
+}
+
+.nav-bar {
+  text-align: center ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.question-list {
+  padding: 30px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.question-list:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.background-trans {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: black !important;
+  border-radius: 5px;
+  /* padding: 16px; */
+}
