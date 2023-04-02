@@ -1,0 +1,15 @@
+{% extends "./base.html" %}
+{% block content %}
+<div class="background-trans p-3 position-absolute top-50 start-50 translate-middle">
+  <h3>{{ question.question_text }}</h3>
+  <ul class="list-group">
+  {% for choice in question.choice_set.all %}
+    <li class="list-group-item">{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+  {% endfor %}
+  </ul>
+  <div class="mt-3">
+    <a href="{% url 'polls:detail' question.id %}" class="btn btn-danger">Vote again?</a>
+    <a href="{% url 'polls:index' %}" class="btn btn-danger">Back Home</a>
+  </div>
+</div>
+{% endblock %}

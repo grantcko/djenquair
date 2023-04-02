@@ -1,0 +1,19 @@
+{% extends "./base.html" %}
+{% block content %}
+<div class="question-list position-absolute top-50 start-50 translate-middle">
+  {% if latest_question_list %}
+  <div class="card" style="width: 20rem;">
+    <ul class="list-group background-trans list-group-flush">
+      {% for question in latest_question_list %}
+      <li class="list-group-item">
+        {{ question.question_text }}
+        <a href="{% url 'polls:detail' question.id %}" class="stretched-link"></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% else %}
+    <p>No polls are available.</p>
+  {% endif %}
+</div>
+{% endblock %}
