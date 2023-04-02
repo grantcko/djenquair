@@ -77,14 +77,12 @@ WSGI_APPLICATION = 'djenquair.wsgi.application'
 
 DATABASES = {
     'default': {
-        'OPTIONS': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'db2f1rugo7qd4r',
-            'USER': 'akpgbddnfmbmwc',
-            'PASSWORD': '5e53b02936bd6830e53e8381b57ff536b3fa1594a9966858253e6eac9bf1c55f',
-            'HOST': 'ec2-3-92-151-217.compute-1.amazonaws.com',
-            'PORT': '5432',
-        },
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db2f1rugo7qd4r',
+        'USER': 'akpgbddnfmbmwc',
+        'PASSWORD': '5e53b02936bd6830e53e8381b57ff536b3fa1594a9966858253e6eac9bf1c55f',
+        'HOST': 'ec2-3-92-151-217.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
